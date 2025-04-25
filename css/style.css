@@ -1,0 +1,23 @@
+body {
+  /* Faz com que eu possa arrastar a tela segurando no body */
+  app-region: drag;
+  user-select: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #333;
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background: #ddd;
+    color: black;
+  }
+}
+
+:root {
+  color-scheme: light, dark;
+}

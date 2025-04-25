@@ -1,0 +1,16 @@
+{
+  "name": "floating-music-player",
+  "version": "1.0.0",
+  "description": "Just a little project to learn electron.js",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Rogerio Filho",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^35.2.1"
+  }
+}
