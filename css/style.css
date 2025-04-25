@@ -1,6 +1,5 @@
 body {
   /* Faz com que eu possa arrastar a tela segurando no body */
-  app-region: drag;
   user-select: none;
 }
 

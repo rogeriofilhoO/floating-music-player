@@ -7,3 +7,7 @@ document.getElementById('reset-to-system').addEventListener('click', async () =>
     await window.darkMode.system()
     document.getElementById('theme-source').innerHTML = 'System'
 })
+
+document.getElementById('close-app').addEventListener('click', async () => {
+    await window.exit.close()
+})

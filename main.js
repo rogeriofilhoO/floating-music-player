@@ -14,7 +14,12 @@ const createWindow = () => {
         frame: false
     })
 
+    win.removeMenu()
     win.loadFile('index.html');
+
+    ipcMain.on("load-page", (event, page) => {
+        win.loadFile(page);
+    });
 }
 
 //troca de thema no app
@@ -29,6 +34,10 @@ ipcMain.handle('dark-mode:toggle', () => {
 
 ipcMain.handle('dark-mode:system', () => {
     nativeTheme.themeSource = 'system'
+})
+
+ipcMain.handle('exit:close', () => {
+    app.quit()
 })
 
 //Quando o app é iniciado
